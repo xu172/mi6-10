@@ -1,0 +1,11 @@
+a=anykernel3
+b=mi6-10.zip
+c=out/arch/arm64/boot
+cp -r $c/Image.gz-dtb $a&&cd $a
+#cp -r $c/Image-dtb $c/dtbo.img $a&&cd $a
+zip -r "$b" *
+cp -f "$b" /media/xu/Ventoy
+cp -f "$b" /run/user/1000/gvfs/mtp:host=Xiaomi_Redmi_K20_Pro_8a9264e8/内部存储设备
+rm -f Image.gz-dtb
+rm -f "$b"
+

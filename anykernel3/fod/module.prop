@@ -1,0 +1,7 @@
+id=fod
+name=fod
+version=1
+versionCode=1
+author=xu313a
+description=随内核一起刷入的Magisk模块
+template=1900
